@@ -38,7 +38,7 @@ font-size: 80px;
     padding: 0;
 }
 .nav li{
-    float:left;
+    display: inline-block;
 }
 .nav li a{
    
