@@ -3,15 +3,7 @@ body {
     margin:0;
     padding:0;
 }
-.header img {
-    
-    float: left;
-    position:relative;
-    left: 400px;
-    width: 5px;
-    height: 5px;
- 
-}
+
 .header h1{
     margin:0;
 background-color: #008B8B;
