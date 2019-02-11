@@ -30,6 +30,7 @@ font-size: 80px;
 }
 .nav ul{
     
+    float: left;
     list-style-type: none;
     text-align: center;
     font-family: 'Gabriela', serif;
