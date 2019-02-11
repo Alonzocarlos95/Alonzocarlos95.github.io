@@ -28,36 +28,32 @@ font-size: 80px;
     font-size:20px;
     
 }
-.nav ul{
-    
-  
+.nav ul {
+    background-color: #008B8B;
     list-style-type: none;
-    text-align: center;
-    font-family: 'Gabriela', serif;
-    font-size: 50px;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
-.nav ul li{
-    display: inline-block;
+.nav li {
+    float:left;
 }
-.nav li a{
-   
-   display: block;
-    color: #000;
-    padding: 8px 16px;
+.nav li a {
+    display:block;
+    color:#000;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
-.nav li a.active {
-    background-color: #5F9EA0;
-    color: white;
-  }
+.nav li a:hover:not(.active) {
+  background-color: #555;
+}
+.active {
+  background-color: #5F9EA0;
+}
 
-.nav li a:hover {
-    background-color: #555;
-    color: white;
-  }
-  .footer{
+  .footer {
       font-size: 25px;
       background-color: #AFEEEE;
   }
+ 
