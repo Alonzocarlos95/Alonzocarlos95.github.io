@@ -8,9 +8,9 @@ body {
     float: left;
     position:relative;
     left: 400px;
-    width: auto;
-    max-width: 100%;
-    height: auto;
+    width: 20px;
+
+    height: 20px;
  
 }
 .header h1{
