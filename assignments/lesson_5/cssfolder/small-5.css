@@ -3,16 +3,17 @@ body {
     margin:0;
     padding:0;
 }
-.header img {
-    
-    float: left;
-    position:relative;
-    left: 400px;
+header img {
     width: 15%;
     height: 15%;
  
 }
-.header h1{
+header {
+  text-align: center;
+
+}
+
+header h1{
     margin:0;
 background-color: #008B8B;
 text-align: center;
@@ -21,35 +22,51 @@ font-size: 80px;
 
 }
 .motto{
+    display: inline-block;
     text-align: center;
     background-color:#008B8B;
     font-family: 'Merienda', cursive;
     font-size:20px;
     
 }
-.nav ul{
+nav ul{
     list-style-type: none;
     text-align: center;
     font-family: 'Gabriela', serif;
     font-size: 50px;
     margin: 1px;
+    padding: 0;
 }
-.nav li a{
+nav li a{
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
 }
-.nav li a.active {
+nav li a.active {
     background-color: #5F9EA0;
     color: white;
   }
 
-.nav li a:hover {
+nav li a:hover {
     background-color: #555;
     color: white;
   }
-  .footer{
+  h2{
+      text-align: center;
+  }
+  .herodiv{
+      position: relative;
+  }
+  .myhero img{
+      max-width: 100%;
+  }
+  .weathersummary{
+      position: absolute;
+  top: 1;
+  }
+
+  footer{
       font-size: 25px;
       background-color: #AFEEEE;
   }

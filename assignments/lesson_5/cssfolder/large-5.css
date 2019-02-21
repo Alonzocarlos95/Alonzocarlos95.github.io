@@ -1,130 +1,24 @@
-body {
-    background-color: #008080;
-    margin:0;
-    padding:0;
-}
+@media (min-width: 900px) {
 
-.header img {
-    
-    float: left;
-    position:absolute;
-    left: 280px;
-	top: 10px;
-    width: 100px;
-    height: 100px;
- 
-}
+    nav ul li {
+        display: inline-block;
+    }
 
-.header h1{
-    margin:0;
-background-color: #008B8B;
 
-text-align: center;
-font-family: 'Tangerine', cursive;
-font-size: 80px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
-.motto{
-    text-align: center;
-    background-color:#008B8B;
-    font-family: 'Merienda', cursive;
-    font-size:20px;
-    
-}
-.nav ul {
-    background-color: #AFEEEE;
-    list-style-type: none;
-	 text-align: center;
-    font-family: 'Gabriela', serif;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-	position: relative;
-	
-	
-    overflow: hidden;
-}
-.nav ul li {
-    float:left;
-	position: relative;
-	left: 25%;
-    border-right: 1px solid #bbb;
-	}
-
-.nav ul li a {
-    display:block;
-    color:#000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.nav ul li a:hover:not(.active) {
-  background-color: #555;
-}
-.nav li a.active {
-  background-color: #5F9EA0;
-}
-
-h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
-
-.myhero img{
-	margin: 10px auto ;
-
-	margin-left: 180px;
-	width: 960px;
-	height: 300px;
-}
-.herodiv {
-	position: relative;
-	
-}
-.weathersummary {
-	 font-family: 'Merienda', cursive;
-	     font-size:13px;
-	position: absolute;
-	top: 1.50em;
-	left:15em;
-	background: radial-gradient(#5858FA, #AFEEEE);
-	border: 1px solid blue;
-	padding: 0.50em;
-    box-shadow: 0 0 30px #fff;
-}
-
-h3 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  margin-left: 22em;
-}
-th, td {
-  padding: 15px;
-}
-th {
-  text-align: left;
-}
-.article {
-	margin: 20px auto;
-	background-color: #eee;
-	border: px solid #333;
-	width: 960px;
-	height: 300px;
-}
-.container{
-	position: relative;
-}
-.environment{
-	
-	   font-family: 'Gabriela', serif;
-	     font-size:13px;
-	position: absolute;
-	top: 0.50em;
-	left:18em;
-	width: 60%;
-}
-
-  .footer {
-      font-size: 25px;
-      background-color: #AFEEEE;
-  }
- 
