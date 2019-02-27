@@ -1,0 +1,61 @@
+@media screen and (min-width:767px)  {
+
+    body {
+        background-color: gray;
+    }
+    header {
+        font-family:'Tangerine', cursive;
+        font-size: 30px;
+        margin-left: 4rem ;
+    }
+    nav {
+        width: 100%;
+        margin:1rem auto;
+        background-color: #AFEEEE;
+          display: flex;
+    flex-direction: column;
+       
+      
+    }
+    nav ul { 
+        list-style-type: none;
+         padding: 0;
+         margin: 0;
+         text-align: center;
+    }
+    nav ul li a {
+        display: block;
+        padding: 1px;
+        text-decoration: none;
+        border-top: 1px solid #2f4f4f;
+    }   
+    nav ul li.active a {
+        background-color: #2f4f4f;
+    }
+    nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+      
+    nav ul.hide {
+        display:none;
+    }
+    .container {
+        margin:1rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1048;
+        
+    }
+     main img {
+         width: 250px;
+         height:auto;
+         margin: .5rem;
+     }
+     main figcaption {
+         font-size: 20px;
+         font-family: 'Cabin Condensed', sans-serif;
+    
+     }
+    .norm:hover{
+         box-shadow: 0 0 50px #333;
+     }
+     
+    }

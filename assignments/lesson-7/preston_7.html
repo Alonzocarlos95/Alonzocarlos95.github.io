@@ -10,66 +10,78 @@
 <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Gabriela|Merienda" rel="stylesheet">
 <link rel="stylesheet" href="cssfolder/normalize.css">
-<link rel="stylesheet" href="css-6/small_6.css"> 
-<link rel="stylesheet" href="css-6/large_6.css">
+<link rel="stylesheet" href="css-lesson7/small_7.css"> 
+<link rel="stylesheet" href="css-lesson7/large-7.css">
     </head>
     <body>
     <header>
-<img src="images_6/sunandsky.png" alt="My weather logo">
+<img src="images-7/sunandsky.png" alt="My weather logo">
 <div class="motto">
 <h1>The Right Weather</h1>
  
 <q>The best website to inform you about the weather in your area .</q></div>
     </header>
   
-    <nav>
-    <ul>
+    <nav class="navigation">
+        
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
         <li><a href="preston-4.html">Home</a></li>
         <li><a class="active" href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
     </ul>
     
 </nav>
 	<main>
-        <h2>Preston Idaho</h2>  
+        <h2>Preston Idaho</h2>
         <div class="herodiv">
         <div class="myhero">
-            <figure>
-        <img src="images_6/summer.jpg" alt="My hero photo"></div>
+        <img src="images-7/sunny.jpg" alt="My hero photo"></div>
         <section class="weathersummary">
         <h3>Weather Summary</h3>
-        <p>Currently:Sunny</p>
-        <p>High:76 &deg;F</p>
-        <p>Wind Chill: 78 &deg;F</p>
-        <p>Humidity: 69 &deg;F</p>
-            <p>Wind Speed: 5mph</p>
+        <form action="" method=post name=windform>
+            <table>
+           
+            <tr>
+            <th>Wind Speed =</th>
+            <td><input type=text name=wind value="" size=6></td>	
+            </tr>
+            <tr>
+            <th>Air Temperature</th>
+            <td><input type=text name=temp value="" size=6></td>
+            </tr>
+            <tr>
+            <td colspan=2>
+            
+            <br>
+            <input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
+            <p>
+            <input name=windchill type=text value="" size=10>&deg; F 
+            </td>
+            </tr>
+            </table>
+            
         </section>
         </div>
         
             <h3>5 Day Forecast</h3>
-    <table>
-      <tr>
-        <th>Wed</th>
-        <th>Thu</th> 
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
+            <div class="grid">
     
-        </tr>
-      <tr>
-        <td>89 &deg;F</td>
-        <td>86 &deg;F</td>
-        <td>83 &deg;F</td>
-        <th>75 &deg;F</th>
-        <th>73 &deg;F</th>
-      </tr>
-      
-      
-    </table>
-    
+        <div>Wed</div>
+        <div>Thu</div> 
+        <div>Fri</div>
+        <div>Sat</div>
+        <div>Sun</div>
+        <div>89 &deg;F</div>
+        <div>86 &deg;F</div>
+        <div>83 &deg;F</div>
+        <div>75 &deg;F</div>
+        <div>73 &deg;F</div>
+
+    </div>
  
     <article class="container">
 
@@ -85,8 +97,9 @@
     <footer>
             <p>&copy; 2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.</p>
 
-    </div>
-
+  
+<script src="script-7/scipts.js"></script>
+<script src="script-7/windchill.js"></script>
 
     </body>
 </html>
