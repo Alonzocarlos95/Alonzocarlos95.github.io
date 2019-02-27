@@ -10,6 +10,7 @@ header img {
 }
 header {
   text-align: center;
+  display: flex;
 
 }
 
