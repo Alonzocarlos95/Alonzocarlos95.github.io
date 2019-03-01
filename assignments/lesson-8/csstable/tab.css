@@ -12,25 +12,27 @@ body{
         border: 1px solid #cccccc;
         padding: 8px 15px;
     }
-    th{
-        background-color: #483D8B;
-        color: white;
+   
     }
     td{
         text-align: center;	
     }
-    tr:nth-child(even) td {
+    tbody tr:first-child {
+        background-color: #628ca6;
+        color: white;
+    }
+    tbody tr:nth-child(even) td {
       background-color: #90EE90;
     }
-    tr:nth-child(odd) td {
+    tbody tr:nth-child(odd) td {
     background-color: rgb(245,245,245);
     }
-    tr:first-child th {
-    background-color: #ADD8E6;
-    color: black;
+    thead {
+        background-color: #7fb9c2;
+        color: black;
     }
-    tr:last-child td {
-    background-color: #ADD8E6;
+    tfoot {
+    background-color: #7fb9c2;
     font-size: 1.5rem;
     }
     caption {
