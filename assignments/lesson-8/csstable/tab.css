@@ -6,6 +6,7 @@ body{
     border: 2px solid #cccccc;
     letter-spacing: 1px;
     font-size: 2rem;
+    box-shadow: 8px 8px 5px #628ca6
     }
     th,td{
         border: 1px solid #cccccc;
