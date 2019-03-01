@@ -39,31 +39,30 @@
         <h2>Preston Idaho</h2>
         <div class="herodiv">
         <div class="myhero">
-        <img src="images-7/sunny.jpg" alt="My hero photo"></div>
+        <img src="images-7/sunny.jpg" alt="My hero photo" sizes="100vw" srcset="images-7/sunny900m.jpg 900w, images-7/sunny400.jpg 400w" ></div>
         <section class="weathersummary">
         <h3>Weather Summary</h3>
-        <form action="" method=post name=windform>
+    
             <table>
            
             <tr>
             <th>Wind Speed =</th>
-            <td><input type=text name=wind value="" size=6></td>	
+            <td><span id="wind">15</span></td>	
             </tr>
             <tr>
             <th>Air Temperature</th>
-            <td><input type=text name=temp value="" size=6></td>
+            <td><span id="temp">40</span></td>
             </tr>
             <tr>
+             <tr>
+                 <th>Wind Chill</th>
+                 <td><span id="windchill"></span></td>
+                 </tr>
+                    
             <td colspan=2>
-            
-            <br>
-            <input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
-            <p>
-            <input name=windchill type=text value="" size=10>&deg; F 
-            </td>
-            </tr>
+         
             </table>
-            </form>
+          
         </section>
         </div>
         

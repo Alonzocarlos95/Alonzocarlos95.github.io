@@ -34,5 +34,9 @@
         padding: 14px 16px;
         text-decoration: none;
     }
+    .myhero img{
+        max-width: 60%;
+        margin: auto;
+    }
 }
 
