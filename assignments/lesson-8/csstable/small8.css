@@ -1,0 +1,139 @@
+body {
+    background-color: #008080;
+    margin:0;
+    padding:0;
+}
+header img {
+
+    height: 50px;
+ 
+}
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+header h1 {
+    margin:0;
+
+text-align: center;
+font-family: 'Tangerine', cursive;
+font-size: 80px;
+
+}
+.motto {    
+  
+    text-align: center;
+   
+    font-family: 'Merienda', cursive;
+    font-size:20px;
+    
+}
+.navigation {
+   font-family: 'Gabriela', serif;
+  
+}
+nav button {
+    font-family: 'Gabriela', serif;
+    font-size: 30px; 
+    margin: .2er 2%;
+    background-color: transparent;
+    border:none;
+    color: #2f4f4f;
+}
+nav {
+    width: 100%;
+    margin:1rem auto;
+    background-color: #AFEEEE;
+    display: flex;
+    flex-direction: column;
+}
+nav ul { 
+    list-style-type: none;
+     padding: 0;
+     margin: 0;
+     text-align: center;
+}
+nav ul li a {
+    display: block;
+    padding: 1px;
+    text-decoration: none;
+    border-top: 1px solid #2f4f4f;
+}   
+nav ul li.active a {
+    background-color: #2f4f4f;
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+  
+nav ul.hide {
+    display:none;
+}
+
+h2 {
+      text-align: center;
+  }
+  .herodiv {
+      position: relative;
+      display:flex;
+      margin: 10px auto;
+         
+  }
+  .myhero{
+      margin: 10px auto;
+      
+  }
+  .myhero img {
+      max-width: 100%;
+     margin: auto;
+      
+      
+  }
+  .weathersummary {
+      position: absolute;
+      display:flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+  top: 1rem;
+  left: 1rem;
+  background: radial-gradient(#387989, #6dd5ed);
+
+  padding: 10px;
+  }
+  .weathersummary h3{
+      margin: 0 0 10px 0;
+  }
+  table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    padding: 5px;
+    }
+    table {
+        border: none;
+    }
+.grid {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    
+    border: 2px solid #8FBC8F;
+    border-radius: 5px;
+    background-color: #2F4F4F;  
+    grid-gap: 10px #8fbc8f ;
+}
+  footer{
+      font-size: 25px;
+      background-color: #AFEEEE;
+      text-align: center;
+      margin-top: 0 ;
+      margin-bottom: 0rem;
+      padding-bottom: 0px;
+      padding-top: 0px;
+  }
+  .label {
+     text-align: center;
+       margin: 0 0 0 0;
+      padding-top:0;
+      padding-bottom: 2rem;
+  }

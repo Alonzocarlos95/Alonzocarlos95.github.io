@@ -1,0 +1,17 @@
+function loadDate() {
+    var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+  
+  var n = weekday[d.getDay()];
+
+  var meses = new Array ("January","February","March","April","May","June","August","September","October","November","December");
+ var m= meses[d.getMonth()];
+    document.getElementById("fecha").innerHTML = n+', '+d.getDate()+' '+m+' '+d.getFullYear()+".";
+  }
