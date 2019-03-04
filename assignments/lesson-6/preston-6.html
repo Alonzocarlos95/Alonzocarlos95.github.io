@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="css-6/small_6.css"> 
 <link rel="stylesheet" href="css-6/large_6.css">
     </head>
-    <body>
+    <body onload="loadDate()">
     <header>
 <img src="images_6/sunandsky.png" alt="My weather logo">
 <div class="motto">
@@ -21,55 +21,65 @@
  
 <q>The best website to inform you about the weather in your area .</q></div>
     </header>
-  
-    <nav>
-    <ul>
+    <!--<iframe onload="loadDate()" src="/currentdate.js"></iframe>-->
+    <nav class="navigation">
+        
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
         <li><a href="preston-4.html">Home</a></li>
         <li><a class="active" href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
     </ul>
     
 </nav>
 	<main>
-        <h2>Preston Idaho</h2>  
+        <h2>Preston Idaho</h2>
         <div class="herodiv">
         <div class="myhero">
-            <figure>
-        <img src="images_6/summer.jpg" alt="My hero photo"></div>
-        <section class="weathersummary">
+        <img src="images_6/sunny.jpg" alt="My hero photo" sizes="100vw" srcset="images_6/sunny900m.jpg 900w, images_6/sunny400.jpg 400w" ></div>
+           <section class="weathersummary">
         <h3>Weather Summary</h3>
-        <p>Currently:Sunny</p>
-        <p>High:76 &deg;F</p>
-        <p>Wind Chill: 78 &deg;F</p>
-        <p>Humidity: 69 &deg;F</p>
-            <p>Wind Speed: 5mph</p>
+    
+            <table>
+           <thead>
+            <tr>
+            <th>Wind Speed</th>
+            <th>Air Temperature</th>	
+            <th>Wind Chill</th>      
+        </tr>
+        </thead>
+        <tbody>  
+        <tr>
+            <td><span id="wind">15</span></td>
+            <td><span id="temp">40</span></td>
+            <td><span id="windchill"></span></td>    
+        </tr>
+        </tbody>
+           
+         
+            </table>
+          
         </section>
         </div>
         
             <h3>5 Day Forecast</h3>
-    <table>
-      <tr>
-        <th>Wed</th>
-        <th>Thu</th> 
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
+            <div class="grid">
     
-        </tr>
-      <tr>
-        <td>89 &deg;F</td>
-        <td>86 &deg;F</td>
-        <td>83 &deg;F</td>
-        <th>75 &deg;F</th>
-        <th>73 &deg;F</th>
-      </tr>
-      
-      
-    </table>
-    
+        <div>Wed</div>
+        <div>Thu</div> 
+        <div>Fri</div>
+        <div>Sat</div>
+        <div>Sun</div>
+        <div>89 &deg;F</div>
+        <div>86 &deg;F</div>
+        <div>83 &deg;F</div>
+        <div>75 &deg;F</div>
+        <div>73 &deg;F</div>
+
+    </div>
  
     <article class="container">
 
@@ -83,10 +93,14 @@
 </main>
 
     <footer>
-            <p>&copy; 2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.</p>
+            <p>&copy;    2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.</p>
+            <div class="label" id="fecha"></div>
 
-    </div>
+  </footer>
 
+  <script src="script6/hamburguer.js"></script>
+<script src="script6/formulawind.js"></script>
+<script src="script6/currentdate.js"></script>
 
     </body>
 </html>

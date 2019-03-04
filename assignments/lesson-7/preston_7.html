@@ -40,26 +40,25 @@
         <div class="herodiv">
         <div class="myhero">
         <img src="images-7/sunny.jpg" alt="My hero photo" sizes="100vw" srcset="images-7/sunny900m.jpg 900w, images-7/sunny400.jpg 400w" ></div>
-        <section class="weathersummary">
+           <section class="weathersummary">
         <h3>Weather Summary</h3>
     
             <table>
-           
+           <thead>
             <tr>
-            <th>Wind Speed =</th>
-            <td><span id="wind">15</span></td>	
-            </tr>
-            <tr>
-            <th>Air Temperature</th>
+            <th>Wind Speed</th>
+            <th>Air Temperature</th>	
+            <th>Wind Chill</th>      
+        </tr>
+        </thead>
+        <tbody>  
+        <tr>
+            <td><span id="wind">15</span></td>
             <td><span id="temp">40</span></td>
-            </tr>
-            <tr>
-             <tr>
-                 <th>Wind Chill</th>
-                 <td><span id="windchill"></span></td>
-                 </tr>
-                    
-            <td colspan=2>
+            <td><span id="windchill"></span></td>    
+        </tr>
+        </tbody>
+           
          
             </table>
           

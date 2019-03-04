@@ -4,28 +4,29 @@ body {
     padding:0;
 }
 header img {
-    width: 15%;
-    height: 15%;
+
+    height: 50px;
  
 }
 header {
   text-align: center;
   display: flex;
+  justify-content: center;
 
 }
 
 header h1 {
     margin:0;
-background-color: #008B8B;
+
 text-align: center;
 font-family: 'Tangerine', cursive;
 font-size: 80px;
 
 }
-.motto {
-    display: inline-block;
+.motto {    
+  
     text-align: center;
-    background-color:#008B8B;
+   
     font-family: 'Merienda', cursive;
     font-size:20px;
     
@@ -36,7 +37,7 @@ font-size: 80px;
 }
 nav button {
     font-family: 'Gabriela', serif;
-    font-size: 30x; 
+    font-size: 30px; 
     margin: .2er 2%;
     background-color: transparent;
     border:none;
@@ -76,10 +77,8 @@ h2 {
   .herodiv {
       position: relative;
       display:flex;
-
-      
       margin: 10px auto;
-     
+         
   }
   .myhero{
       margin: 10px auto;
@@ -98,12 +97,21 @@ h2 {
       flex-wrap:wrap;
   top: 1rem;
   left: 1rem;
+  background: radial-gradient(#387989, #6dd5ed);
+
+  padding: 10px;
+  }
+  .weathersummary h3{
+      margin: 0 0 10px 0;
   }
   table, th, td {
     border: 1px solid black;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    padding: 5px;
+    }
+    table {
+        border: none;
     }
 .grid {
     display: grid;
