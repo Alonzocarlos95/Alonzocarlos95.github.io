@@ -1,0 +1,50 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+.grass, .sky, .road{
+  position: relative;
+}
+.sky{
+  height: 40%;
+  background-color: skyblue;
+
+}
+.grass {
+  height: 30%;
+  background-color: brown;
+}
+.road {
+  height: 30%;
+  background: dimgray;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+.lines{
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+height: 0px;
+width: 100%;
+position: absolute;
+top: 45%
+}
+
+
+
+
+.bike {
+  position: absolute;
+  top: -60px;
+  left:0; 
+  animation-name:drive;
+  animation-duration: 6s;
+}
+
+@keyframes drive{
+  from{ transform: translateX(0)}
+  to { transform: translateX(700px)} 
+}
