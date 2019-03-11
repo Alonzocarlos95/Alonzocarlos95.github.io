@@ -1,0 +1,175 @@
+body {
+    background-color: #008080;
+    margin:0;
+    padding:0;
+}
+header img {
+
+    height: 50px;
+ 
+}
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+header h1 {
+    margin:0;
+
+text-align: center;
+font-family: 'Tangerine', cursive;
+font-size: 80px;
+
+}
+.motto {    
+  
+    text-align: center;
+   
+    font-family: 'Merienda', cursive;
+    font-size:20px;
+    
+}
+.navigation {
+   font-family: 'Gabriela', serif;
+  
+}
+nav button {
+    font-family: 'Gabriela', serif;
+    font-size: 30px; 
+    margin: .2er 2%;
+    background-color: transparent;
+    border:none;
+    color: #2f4f4f;
+}
+nav {
+    width: 100%;
+    margin:1rem auto;
+    background-color: #AFEEEE;
+    display: flex;
+    flex-direction: column;
+}
+nav ul { 
+    list-style-type: none;
+     padding: 0;
+     margin: 0;
+     text-align: center;
+}
+nav ul li a {
+    display: block;
+    padding: 1px;
+    text-decoration: none;
+    border-top: 1px solid #2f4f4f;
+}   
+nav ul li.active a {
+    background-color: #2f4f4f;
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+  
+nav ul.hide {
+    display:none;
+}
+
+h2 {
+      text-align: center;
+  }
+  .herodiv {
+      position: relative;
+      display:flex;
+      margin: 10px auto;
+         
+  }
+  .myhero{
+      margin: 10px auto;
+      
+  }
+  .myhero img {
+      max-width: 100%;
+     margin: auto;
+      
+      
+  }
+  .weathersummary {
+      position: absolute;
+      display:flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+  top: 1rem;
+  left: 1rem;
+  background: radial-gradient(#387989, #6dd5ed);
+
+  padding: 10px;
+  }
+  .weathersummary h3{
+      margin: 0 0 10px 0;
+  }
+  section#cities {
+    border: none;
+    background-image: none;
+    text-align:center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3%;
+    max-width: 1000px;
+margin-top: 30px;
+
+
+}
+#cities div {
+    background-color: #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-gap: 10px;
+    max-width: 500px;
+    margin:auto;
+}
+#cities h3 {
+    font-family: 'Candal', sans-serif;
+    font-size: 1.2rem;
+    color:#ffffff;
+    margin: 5% 0 0 0;
+  
+}
+#cities h6 {
+    font-family: 'lato', sans-serif;
+    color: #79B473;
+    font-size: .9rem;
+    margin: 10px 0 20px 0;
+    padding: 0 10px;
+}
+
+#cities p {
+    font-size: .9rem;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    color: #222e50;
+}
+
+img.townPhoto {
+    max-width: 100%;
+    margin-bottom: 20px;
+
+
+}
+  footer{
+      font-size: 25px;
+      background-color: #AFEEEE;
+      text-align: center;
+      margin-top: 0 ;
+      margin-bottom: 0rem;
+      padding-bottom: 0px;
+      padding-top: 0px;
+  }
+  .label {
+     text-align: center;
+       margin: -20px 0 0 0;
+      padding-top:0;
+      padding-bottom: 2rem;
+  }
+  #map {
+    max-width: 300px;
+    height: 200px;
+      margin: auto;
+      padding-top: 10%;
+  }

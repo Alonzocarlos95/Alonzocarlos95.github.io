@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+<title>The Right Weather</title>
+<meta name="description" content="Weather website for Carlos Alonzo in CIT 230">
+
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gabriela|Merienda" rel="stylesheet">
+<link rel="stylesheet" href="lesson9.css/normalize9.css">
+<link rel="stylesheet" href="lesson9.css/small9.css"> 
+<link rel="stylesheet" href="lesson9.css/large9.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <body onload="loadDate()">
+    <header>
+<img src="img9/sunandsky.png" alt="My weather logo">
+<div class="motto">
+<h1>The Right Weather</h1>
+ 
+<q>The best website to inform you about the weather in your area .</q></div>
+    </header>
+  
+    <nav class="navigation">
+        
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="active" href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery8.html">Gallery</a></li>
+    </ul>
+    
+</nav>
+	<main>
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+        <div class="myhero">
+        <img src="img9/sunny.jpg" alt="My hero photo" sizes="100vw" srcset="img9/sunny900m.jpg 900w, img9/sunny400.jpg 400w" ></div>
+           <div class="weathersummary">
+        <h3>Weather Summary</h3>
+    
+            <table>
+           <thead>
+            <tr>
+            <th>Wind Speed</th>
+            <th>Air Temperature</th>	
+            <th>Wind Chill</th>      
+        </tr>
+        </thead>
+        <tbody>  
+        <tr>
+            <td><span id="wind">15</span></td>
+            <td><span id="temp">40</span></td>
+            <td><span id="windchill"></span></td>    
+        </tr>
+        </tbody>
+           
+         
+            </table>
+          
+           </div>
+        </div>
+        
+           <section id = "cities">
+
+                </section><br><br><br>
+        
+</main>
+<div id="map"></div><br>
+    <footer>
+            <p>&copy; 2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.</p>
+            <div class="label" id="fecha"></div>
+  </footer>
+
+  <script src="java9/hmenu9.js"></script>
+<script src="java9/windnchill.js"></script>
+<script src="java9/date9.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="java9/map.js"></script>
+<script src = "java9/jsontemplate.js"></script>
+
+    </body>
+</html>
