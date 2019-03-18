@@ -6,12 +6,42 @@
 
 <title>Storm Center</title>
 <meta name="description" content="Storm Center web page from Carlos Alonzo">
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gabriela|Merienda" rel="stylesheet">
+<link rel="stylesheet" href="csstable/normalize.css">
+<link rel="stylesheet" href="csstable/smallstormcenter.css">
+<link rel="stylesheet" href="csstable/largestorm.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
-<link rel="stylesheet" href="csstable/stormcenter.css">
 </head>
 <body>
+<header>
+<img src="images8/sunandsky.png" alt="My weather logo">
+<div class="motto">
+<h1>The Right Weather</h1>
 
-<form action="thanks.html">
+<q>The best website to inform you about the weather in your area.</q>
+
+
+</header>
+
+<nav class="navigation">
+<button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="primaryNav" class="hide">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="preston-8.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li  class="active"><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>
+    </nav>
+
+<main>
+    <h2>Storm Center</h2>
+<h3 class="required">Please enter your information to report a storm.</h3>
+
+        <form action="thanks.html">
 <fieldset>
 <legend>Contact Information</legend>
 <label for="Name">Name</label>
@@ -77,12 +107,12 @@
             <input type="submit" id="sub">
 </fieldset>
     </form>
+</main>
 
 
 
 
-
-
+<script src="java8/hamburguer8.js"></script>
 <script src="java8/rating.js"></script>
 </body>
 
