@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+<title>The Right Weather</title>
+<meta name="description" content="Weather website for Carlos Alonzo in CIT 230">
+
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gabriela|Merienda" rel="stylesheet">
+<link rel="stylesheet" href="css10/normalize.css">
+<link rel="stylesheet" href="css10/small10.css"> 
+<link rel="stylesheet" href="css10/large10.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+    <body onload="loadDate()">
+    <header>
+<img src="images10/sunandsky.png" alt="My weather logo">
+<div class="motto">
+<h1>The Right Weather</h1>
+
+<q>The best website to inform you about the weather in your area .</q></div>
+    </header>
+  
+    <nav class="navigation">
+        
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+        <li><a href="home10.html">Home</a></li>
+        <li class="active"><a  href="preston-10.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter10.html">Storm Center</a></li>
+        <li><a href="gallery10.html">Gallery</a></li>
+    </ul>
+    
+</nav>
+	<main>
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+        <div class="myhero">
+        <img src="images10/sunny.jpg" alt="My hero photo" sizes="100vw" srcset="images10/sunny900m.jpg 900w, images10/sunny400.jpg 400w" ></div>
+           <section class="weathersummary">
+        <h3>Weather Summary</h3>
+    
+            <table>
+           <thead>
+            <tr>
+            <th>Currently: <span id="current-condition"></span></th>
+            <th>Temperature:<span id="hightemp"></span> &deg; F</th>   
+            <th>Humidity: <span id="hum"></span></th>
+            <th>Wind Speed: <span id="wind-speed"></span>mph</th>	
+            <th>Wind Chill:<span id="windChill"></span>&deg; F</th>      
+        </tr>
+        </thead>
+        
+           
+         
+            </table>
+          
+        </section>
+        </div>
+        
+            <h3>5 Day Forecast</h3>
+            <div class="grid">
+    
+        <div>Wed</div>
+        <div>Thu</div> 
+        <div>Fri</div>
+        <div>Sat</div>
+        <div>Sun</div>
+        <div>89 &deg;F</div>
+        <div>86 &deg;F</div>
+        <div>83 &deg;F</div>
+        <div>75 &deg;F</div>
+        <div>73 &deg;F</div>
+
+    </div>
+ 
+    <article class="container">
+
+    <h4>Why Is It Important to Care About the Environment?</h4>
+    <p>The ecosystem (all the communities of living organisms found in a specific place, their habitats and their interactions) in which we live provides natural services for humans and all other species that are essential to our health, quality of life and survival. For example, our forests remove carbon dioxide and other pollutants from the air we breathe and also cool our air temperatures, reducing the formation of ground-level ozone, a pollutant that can cause heart and lung problems to worsen; our wetlands store storm water, filter and make harmless storm water pollutants, and recharge our aquifers (where most of us get our drinking water) with these filtered waters; and the dune systems on our beaches form natural barriers to storm waves and provide important habitat and travel ways for wildlife.
+    
+    Below are three environmental goals that are critical to achieving sustainable societies and being good environmental stewards, some of their economic, social and environmental benefits, and some of the actions we can take to achieve these goals.</p>
+    
+
+</article>
+</main>
+<div id="map"></div><br>
+    <footer>
+            <p>&copy; 2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.</p>
+            <div class="label" id="fecha"></div>
+  </footer>
+
+  <script src="scripts-10/hamburguer10.js"></script>
+<script src="scripts-10/date10.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="scripts-10/map.js"></script>
+<script src="scripts-10/jasonapi.js"></script>
+
+    </body>
+</html>

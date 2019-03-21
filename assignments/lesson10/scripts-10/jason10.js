@@ -37,19 +37,19 @@ function showPueblos(jsonObj) {
         myPara4.textContent = 'Average Rainfall:' + pueblos[i].averageRainfall;
         
         if (name.includes("Fish Haven")) {
-            myPicture.src ="img9/fishhaven2.jpg"
+            myPicture.src ="images10/fishhaven2.jpg"
             myPicture.setAttribute('class', 'townPhoto');
              myPicture.setAttribute('alt','Fish Haven Pic');
              myArticle.style.order = "3";
         }
         if (name.includes("Preston")) {
-            myPicture.src = 'img9/preston1.jpg'
+            myPicture.src = 'images10/preston1.jpg'
             myPicture.setAttribute('class', 'townPhoto');
          myPicture.setAttribute('alt', 'Preston Photo');
         myArticle.style.order = "1";
         }
         if (name.includes("Soda Springs")) {
-            myPicture.src = 'img9/springs.jpg'
+            myPicture.src = 'images10/springs.jpg'
             myPicture.setAttribute('class', 'townPhoto');
             myPicture.setAttribute('alt', 'Soda Springs Photo');
             myArticle.style.order = "2";

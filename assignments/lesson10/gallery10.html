@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+<title>The Right Weather | Gallery</title>
+<meta name="description" content="Gallery from The Right Weather">
+
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gabriela|Merienda" rel="stylesheet">
+<link rel="stylesheet" href="css10/normalize.css">
+<link rel="stylesheet" href="css10/gallery10sm.css"> 
+<link rel="stylesheet" href="css10/gallerymd.css">
+<link rel="stylesheet" href="css10/gallerylar.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+    <body onload="loadDate()">
+    <header>
+<img src="images10/sunandsky.png" alt="My weather logo">
+<div class="motto">
+<h1>The Right Weather</h1>
+
+<q>The best website to inform you about the weather in your area .</q></div>
+    </header>
+  
+    <nav class="navigation">
+        
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+        <li><a href="home10.html">Home</a></li>
+        <li><a  href="preston-10.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter10.html">Storm Center</a></li>
+        <li class="active"><a href="gallery8.html">Gallery</a></li>
+    </ul>
+    
+</nav>
+	<main>
+        <h2 class="mainheader">Weather Gallery</h2>
+      <div class="container">
+          <figure>
+              <img class="norm" src="images10/lake1.jpg" alt="lake">
+<figcaption>Lake Against Sky during Sunset</figcaption>
+     </figure>
+     <figure>
+         <img class="norm" src="images10/mountain1.jpg" alt="mountain">
+         <figcaption>Beautiful Mountain</figcaption>
+         </figure>
+         <figure>
+             <img class="norm" src="images10/desert1.jpg" alt="desert">
+         <figcaption>Desert in Arizona</figcaption>
+            </figure>
+            <figure>
+                    <img class="norm" src="images10/bridge2.jpg" alt="bridge">
+                    <figcaption>German Bridge</figcaption>
+                
+                </figure>
+                <figure>
+                    <img class="norm" src="images10/valley1.jpg" alt="valley">
+                    <figcaption>Valley of Lemuel</figcaption>
+                </figure>
+                <figure>
+                    <img class="norm" src="images10/beach1.jpg" alt="beach">
+                    <figcaption>Crucita Beach</figcaption>
+                </figure>
+        
+            </div>
+     
+</main>
+<div id="map"></div><br>
+    <footer>
+            <p>&copy; 2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.</p>
+            <div class="label" id="fecha"></div>
+  </footer>
+
+  <script src="scripts-10/hamburguer10.js"></script>
+<script src="scripts-10/date10.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="scripts-10/map.js"></script>
+
+    </body>
+</html>

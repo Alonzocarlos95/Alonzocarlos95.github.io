@@ -1,0 +1,154 @@
+@media (min-width:0) {
+
+html{
+    height: 100%;
+}
+
+body {
+    background-color: #008080;
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+header img {
+
+    height: 50px;
+ 
+}
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+header h1 {
+    margin:0;
+
+text-align: center;
+font-family: 'Tangerine', cursive;
+font-size: 70px;
+
+}
+.motto {    
+  
+    text-align: center;
+   
+    font-family: 'Merienda', cursive;
+    font-size:20px;
+    
+}
+.navigation {
+   font-family: 'Gabriela', serif;
+  
+}
+nav button {
+    font-family: 'Gabriela', serif;
+    font-size: 30px; 
+    margin: .2er 2%;
+    background-color: transparent;
+    border:none;
+    color: #2f4f4f;
+}
+nav {
+    width: 100%;
+    margin:1rem auto;
+    background-color: #AFEEEE;
+    display: flex;
+    flex-direction: column;
+}
+nav ul { 
+    list-style-type: none;
+     padding: 0;
+     margin: 0;
+     text-align: center;
+}
+nav ul li a {
+    display: block;
+    padding: 1px;
+    text-decoration: none;
+    border-top: 1px solid #2f4f4f;
+}   
+nav ul li.active a {
+    background-color: #CCFFFF;
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+  
+nav ul.hide {
+    display:none;
+}
+h2.mainheader {
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    padding-top: 15px;
+}
+
+  
+  footer{
+      font-size: 25px;
+      background-color: #AFEEEE;
+      text-align: center;
+      margin-top: 0 ;
+      margin-bottom: 0rem;
+      padding-bottom: 0px;
+      padding-top: 0px;
+  }
+  label,
+  textarea {
+  
+      letter-spacing: 1px;
+  }
+  textarea {
+      padding: 10px;
+      line-height: 1.5;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-shadow: 1px 1px 1px #999;
+  }
+  .header2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 2em;
+    color: #F0FFFF;
+    text-align: center;
+  }
+  h3.required {
+    text-align: center;
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 10px;
+  }
+  form {
+      max-width: 500px;
+      margin: auto;
+  }
+  #map {
+    max-width: 300px;
+    height: 200px;
+      margin: auto;
+      padding-top: 10%;
+  }
+  .container {
+    margin:1rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1048;
+ 
+}
+
+ main img {
+     width: 250px;
+     height:auto;
+     margin: .5rem;
+ }
+ main figcaption {
+     font-size: 20px;
+     font-family: 'Cabin Condensed', sans-serif;
+
+ }
+.norm:hover{
+     box-shadow: 0 0 50px #333;
+ }
+
+}
