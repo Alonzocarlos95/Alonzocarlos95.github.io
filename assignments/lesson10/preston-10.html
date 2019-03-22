@@ -47,11 +47,14 @@
             <table>
            <thead>
             <tr>
-            <th>Currently: <span id="current-condition"></span></th>
-            <th>Temperature:<span id="hightemp"></span> &deg; F</th>   
-            <th>Humidity: <span id="hum"></span></th>
-            <th>Wind Speed: <span id="wind-speed"></span>mph</th>	
-            <th>Wind Chill:<span id="windChill"></span>&deg; F</th>      
+                <div class="table1">
+            <th class="c">Currently: <span id="current-condition"></span></th>
+            <th class="t">Temperature:<span id="hightemp"></span> &deg; F</th>   
+            <th class="h">Humidity: <span id="hum"></span></th>
+            <th class="w">Wind Speed: <span id="wind-speed"></span>mph</th>	
+            <th class="wc">Wind Chill:<span id="windChill"></span>&deg; F</th>      
+    </div>
+
         </tr>
         </thead>
         
@@ -62,21 +65,30 @@
         </section>
         </div>
         
-            <h3>5 Day Forecast</h3>
-            <div class="grid">
-    
-        <div>Wed</div>
-        <div>Thu</div> 
-        <div>Fri</div>
-        <div>Sat</div>
-        <div>Sun</div>
-        <div>89 &deg;F</div>
-        <div>86 &deg;F</div>
-        <div>83 &deg;F</div>
-        <div>75 &deg;F</div>
-        <div>73 &deg;F</div>
-
-    </div>
+        <section class="forecast">
+                <h3>5 Day Forecast</h3>
+                <table class="foretable">
+                    <thead>
+                        <tr>
+                            <th id="day1"></th>
+                            <th><span id="day2"></span></th>
+                            <th><span id="day3"></span></th>
+                            <th><span id="day4"></span></th>
+                            <th><span id="day5"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="#" id="weather_icon1" alt="Weather Icon"><br><span id="highTemp1"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon2" alt="Weather Icon"><br><span id="highTemp2"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon3" alt="Weather Icon"><br><span id="highTemp3"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon4" alt="Weather Icon"><br><span id="highTemp4"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon5" alt="Weather Icon"><br><span id="highTemp5"></span>&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+             
  
     <article class="container">
 

@@ -52,6 +52,45 @@
     input {
         height: 30px;
     }
+    table.foretable {
+        width: 1000px;
+        margin:10px auto 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-collapse: collapse;
+        
+    }
+   
+       section h3 {
+ font-family: 'Merienda', cursive;
+ text-align: center;
+    }
+    section.forecast{
+        display: block;
+        font-family:'Candal', sans-serif;    
+    }
+    .forecast th {
+       
+        color: #fff;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .forecast td,
+    .forecast th {
+        border: 3px solid #ddd;
+    }
+    .forecast td {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 20px 45px;
+    }
+
+    .forecast img {
+        width: 90px;
+    }
+    #map{
+        height:300px;
+    }
+
 }
 
 

@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #008080;
     margin:0;
@@ -104,11 +107,14 @@ h2 {
   .weathersummary h3{
       margin: 0 0 10px 0;
   }
-  table, th, td {
+  table,  th, td {
     border: 1px solid black;
     text-align: center;
-    display: flex;
+   
     padding: 5px;
+    }
+    th.c, th.h, th.w, th.wc, th.t {
+        display: flex;
     }
     table {
         border: none;
@@ -163,7 +169,7 @@ h2 {
   }
   #map {
     max-width: 300px;
-    height: 200px;
+    height: 250px;
       margin: auto;
       padding-top: 10%;
   }
