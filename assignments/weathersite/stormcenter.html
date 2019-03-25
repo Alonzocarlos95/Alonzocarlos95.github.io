@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"> 
+
+<title>The Right Weather | Storm Center</title>
+<meta name="description" content="Storm Center web page from Carlos Alonzo">
+
+<!--Google api-->
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gabriela%7CMerienda" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<!--CCS references-->
+<link rel="stylesheet" href="css_code/normalize.css">
+<link rel="stylesheet" href="css_code/smallview.css">
+<link rel="stylesheet" href="css_code/largeview.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<!--Site Navigation-->
+<body onload="loadDate()">
+<header>
+<img src="images/sunandsky1.jpg" alt="My weather logo">
+<div class="motto">
+<h1>The Right Weather</h1>
+
+<q>The best website to inform you about the weather in your area.</q>
+
+
+</header>
+
+<nav class="navigation">
+<button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="primaryNav" class="hide">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li  class="active"><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    </nav>
+
+<main>
+    <div class="header2">
+    <h2>Storm Center</h2>
+    </div>
+<h3 class="required">Please enter your information to report a storm.</h3>
+
+        <form action="thanks.html">
+<fieldset>
+<legend>Contact Information</legend>
+<label for="Name">Name</label>
+<input type="text" id="name" name="name" placeholder="--only alpha characters--" required pattern="[A-Za-z]{5,}" minlength="5">
+<br><br>
+<label for="lastn">Last Name</label>
+<input type="text" id="lastn" name="lastname" placeholder="--only alpha characters--" required pattern="[A-Za-z]{5,}" minlength="5">
+<br><br>
+<label for="emails">Email</label>
+<input type="email" id="emails" placeholder="  me@example.com">
+<br><br>
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" required>
+<br></br>
+<label for="zip">Zip Code</label>
+<input type="number" id="zip" required>
+
+</fieldset>
+<br><br>
+<fieldset>
+    <legend>Weather Events</legend>
+    <label for="storm">Storm Date</label>
+    <input type="date" id='storm'>
+    <br><br>
+    <label for="stormlist">Storm Type</label>
+    <input list="stormtype" id="stormlist" name="stormlist" />
+
+    <datalist id="stormtype">
+        <option value="Flash Flood">
+            <option value="Hail">
+                <option value="Hurricane">
+                    <option value="Thunderstorm">
+                        <option value="Tornado">
+                        </datalist>
+                        <br><br>
+    <label for="rate">Storm Severity (1 to 10)</label>                    
+    <input type="range" id="rate" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+    <span id="ratingvalue">5</span><br><br>
+    <label for="sregion">Storm Region</label>
+    <select id="sregion">
+            <option value="Select Region" disabled selected>Select Region</option>
+        <option value="Preston">Preston</option>
+        <option value="Soda Spring">Soda Spring</option>
+        <option value="Fish Haven">Fish Haven</option>
+    </select>
+               <br><br>
+               <p>User in-danger level:</p>
+               <input type="radio" id="level" name="level" value="Yes" checked>
+               <label for="level">Yes</label>
+
+               <input type="radio" id="level1" name="level" value="Maybe">
+               <label for="level1">Maybe</label>
+
+               <input type="radio" id="level2" name="level" value="No">
+               <label for="level2">No</label>
+
+            <br><br>
+            <label for='com'>Additional Information or Comments:</label>
+            <textarea id='com' name="com" rows="5" cols="33"></textarea>
+            <br><br>
+
+            <label for="sub">Form Submission Button</label>
+            <input type="submit" id="sub">
+</fieldset>
+    </form>
+</main>
+<br>
+
+    <footer>
+            <aside>
+                    <div class="contacts">
+         <p><b>The Right Weather</b></p>
+         <p><i class="material-icons">location_on</i>123 Broadway<br>Preston, ID 1234</p>
+         <p><i class="material-icons">phone_iphone</i> 055-033-696</p>
+         <p><i class="material-icons">mail_outline</i> theright@weatherapi.com</p>
+         <i class="fa fa-facebook-official" aria-hidden="true"></i>
+         <i class="fa fa-twitter" aria-hidden="true"></i>
+         <i class="fa fa-instagram" aria-hidden="true"></i>
+         <i class="fa fa-google" aria-hidden="true"></i>
+         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+         <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                    <div id="map"></div>
+                        </aside>
+            <p>&copy; 2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.</p>
+            <div class="label" id="fecha"></div>
+  </footer>
+
+
+
+
+<script src="java_code/smallnavigationbar.js"></script>
+<script src="java_code/rating.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="java_code/mapweather.js"></script>
+<script src="java_code/date.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+<title>The Right Weather|Preston Page</title>
+<meta name="description" content="Weather website for Carlos Alonzo in CIT 230">
+
+<!--Google Api-->
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gabriela%7CMerienda" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<!--CSS REFERENCES-->
+<link rel="stylesheet" href="css_code/normalize.css">
+<link rel="stylesheet" href="css_code/townssmall.css"> 
+<link rel="stylesheet" href="css_code/townslarge.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<!--Site Navigationn-->
+    <body onload="loadDate()">
+    <header>
+<img src="images/sunandsky1.jpg" alt="My weather logo">
+<div class="motto">
+<h1>The Right Weather</h1>
+
+<q>The best website to inform you about the weather in your area .</q></div>
+    </header>
+  
+    <nav class="navigation">
+        
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+        <li><a href="home.html">Home</a></li>
+        <li class="active"><a  href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    
+</nav>
+	<main>
+        <h2>"Thanks for trusting us"</h2>
+        
+</main>
+<br>
+
+    <footer>
+            <aside>
+                    <div class="contacts">
+         <p><b>The Right Weather</b></p>
+         <p><i class="material-icons">location_on</i>123 Broadway<br>Preston, ID 1234</p>
+         <p><i class="material-icons">phone_iphone</i> 055-033-696</p>
+         <p><i class="material-icons">mail_outline</i> theright@weatherapi.com</p>
+         <i class="fa fa-facebook-official" aria-hidden="true"></i>
+         <i class="fa fa-twitter" aria-hidden="true"></i>
+         <i class="fa fa-instagram" aria-hidden="true"></i>
+         <i class="fa fa-google" aria-hidden="true"></i>
+         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+         <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                    <div id="map"></div>
+                        </aside>
+            <p>&copy; 2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.<br>Weather Information provided by<a href="https://openweathermap.org/"> OpenWeatherMap.org .</a></p>
+            <div class="label" id="fecha"></div>
+  </footer>
+
+  <script src="java_code/smallnavigationbar.js"></script>
+<script src="java_code/date.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="java_code/mapweather.js"></script>
+
+
+    </body>
+</html>

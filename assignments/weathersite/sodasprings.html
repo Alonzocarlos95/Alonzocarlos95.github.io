@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+<title>The Right Weather| Soda Springs Page</title>
+<meta name="description" content="Weather website for Carlos Alonzo in CIT 230">
+
+<!--Google Api-->
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gabriela%7CMerienda" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<!--CSS REFERENCES-->
+<link rel="stylesheet" href="css_code/normalize.css">
+<link rel="stylesheet" href="css_code/townssmall.css"> 
+<link rel="stylesheet" href="css_code/townslarge.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<!--Site Navigationn-->
+    <body onload="loadDate()">
+    <header>
+<img src="images/sunandsky1.jpg" alt="My weather logo">
+<div class="motto">
+<h1>The Right Weather</h1>
+
+<q>The best website to inform you about the weather in your area .</q></div>
+    </header>
+  
+    <nav class="navigation">
+        
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+        <li><a href="home.html">Home</a></li>
+        <li><a  href="preston.html">Preston</a></li>
+        <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    
+</nav>
+	<main>
+        <h2>Soda Springs</h2>
+        <div class="herodiv">
+                <div class="myhero">
+                <img src="images/sodaimg.jpg" alt="My hero photo" sizes="100vw" srcset="images/soda900.jpg 900w, images/soda400.jpg 400w" ></div>
+                   <section class="weathersummary">
+                <h3>Weather Summary</h3>
+            
+                    <table>
+                   <thead>
+                    <tr>
+                        <div class="table1">
+                    <th class="c">Currently: <span id="current-condition"></span></th>
+                    <th class="t">Temperature:<span id="hightemp"></span> &deg; F</th>   
+                    <th class="h">Humidity: <span id="hum"></span></th>
+                    <th class="w">Wind Speed: <span id="wind-speed"></span>mph</th>	
+                    <th class="wc">Wind Chill:<span id="windChill"></span>&deg; F</th>      
+            </div>
+        
+                </tr>
+                </thead>
+                
+                   
+                 
+                    </table>
+                  
+                </section>
+                </div>
+        
+        <section class="forecast">
+                <h3>5 Day Forecast</h3>
+                <table class="foretable">
+                    <thead>
+                        <tr>
+                            <th id="day1"></th>
+                            <th><span id="day2"></span></th>
+                            <th><span id="day3"></span></th>
+                            <th><span id="day4"></span></th>
+                            <th><span id="day5"></span></th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="#" id="weather_icon1" alt="Weather Icon"><br><span id="highTemp1"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon2" alt="Weather Icon"><br><span id="highTemp2"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon3" alt="Weather Icon"><br><span id="highTemp3"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon4" alt="Weather Icon"><br><span id="highTemp4"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon5" alt="Weather Icon"><br><span id="highTemp5"></span>&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+             
+ 
+    <article>
+
+    <h4 class="titlefor">The Ozone Layer: Our Global Sunscreen</h4>
+    <p class="reading">It's not often that scientists get to conduct experiments that seem like they come out of a science fiction novel or a video game. Yet, that is what some researchers at NASA did a few years ago.
+
+            Atmospheric physicists Paul Newman and Luke Oman built a simulation of the Earth’s atmosphere and then proceeded to strip away our protective ozone layer. Their computer model reproduced the chemistry and circulation of the air; the natural variations in temperatures and winds; and the minor changes in the amount of energy received from the sun. Newman and Oman then added ozone-destroying chemicals to the atmosphere at a rate of 3% more per year—on top of what was already in our 1970s atmosphere. For several months, they ran their model on a supercomputer and reproduced about 80 years of simulated Earth time. They called their experiment "The World Avoided."</p>
+</article>
+
+<aside class="aside-events">
+    <h4 class="h4events">Events in Soda Springs</h4>
+    </aside>
+
+</main>
+<br>
+
+    <footer>
+            <aside>
+                    <div class="contacts">
+         <p><b>The Right Weather</b></p>
+         <p><i class="material-icons">location_on</i>123 Broadway<br>Preston, ID 1234</p>
+         <p><i class="material-icons">phone_iphone</i> 055-033-696</p>
+         <p><i class="material-icons">mail_outline</i> theright@weatherapi.com</p>
+         <i class="fa fa-facebook-official" aria-hidden="true"></i>
+         <i class="fa fa-twitter" aria-hidden="true"></i>
+         <i class="fa fa-instagram" aria-hidden="true"></i>
+         <i class="fa fa-google" aria-hidden="true"></i>
+         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+         <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                    <div id="map"></div>
+                        </aside>
+            <p>&copy; 2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.<br>Weather Information provided by<a href="https://openweathermap.org/"> OpenWeatherMap.org .</a></p>
+            <div class="label" id="fecha"></div>
+  </footer>
+
+  <script src="java_code/smallnavigationbar.js"></script>
+<script src="java_code/date.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="java_code/mapweather.js"></script>
+<script src="java_code/sodasprings.js"></script>
+
+    </body>
+</html>

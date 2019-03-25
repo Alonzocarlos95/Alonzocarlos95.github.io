@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+<title>The Right Weather|Preston Fish Haven</title>
+<meta name="description" content="Weather website for Carlos Alonzo in CIT 230">
+
+<!--Google Api-->
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gabriela%7CSanchez&7CMerienda" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<!--CSS REFERENCES-->
+<link rel="stylesheet" href="css_code/normalize.css">
+<link rel="stylesheet" href="css_code/townssmall.css"> 
+<link rel="stylesheet" href="css_code/townslarge.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<!--Site Navigationn-->
+    <body onload="loadDate()">
+    <header>
+<img src="images/sunandsky1.jpg" alt="My weather logo">
+<div class="motto">
+<h1>The Right Weather</h1>
+
+<q>The best website to inform you about the weather in your area .</q></div>
+    </header>
+  
+    <nav class="navigation">
+        
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+        <li><a href="home.html">Home</a></li>
+        <li><a  href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    
+</nav>
+	<main>
+        <h2>Fish Haven</h2>
+        <div class="herodiv">
+                <div class="myhero">
+                <img src="images/fishhavenimg.jpg" alt="My hero photo" sizes="100vw" srcset="images/fish900.jpg 900w, images/fish400.jpg 400w" ></div>
+                   <section class="weathersummary">
+                <h3>Weather Summary</h3>
+            
+                    <table>
+                   <thead>
+                    <tr>
+                        <div class="table1">
+                    <th class="c">Currently: <span id="current-condition"></span></th>
+                    <th class="t">Temperature:<span id="hightemp"></span> &deg; F</th>   
+                    <th class="h">Humidity: <span id="hum"></span></th>
+                    <th class="w">Wind Speed: <span id="wind-speed"></span>mph</th>	
+                    <th class="wc">Wind Chill:<span id="windChill"></span>&deg; F</th>      
+            </div>
+        
+                </tr>
+                </thead>
+                
+                   
+
+                    </table>
+                  
+                </section>
+                </div>
+        
+        <section class="forecast">
+                <h3>5 Day Forecast</h3>
+                <table class="foretable">
+                    <thead>
+                        <tr>
+                            <th id="day1"></th>
+                            <th><span id="day2"></span></th>
+                            <th><span id="day3"></span></th>
+                            <th><span id="day4"></span></th>
+                            <th><span id="day5"></span></th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="#" id="weather_icon1" alt="Weather Icon"><br><span id="highTemp1"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon2" alt="Weather Icon"><br><span id="highTemp2"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon3" alt="Weather Icon"><br><span id="highTemp3"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon4" alt="Weather Icon"><br><span id="highTemp4"></span>&deg;F</td>
+                            <td><img src="#" id="weather_icon5" alt="Weather Icon"><br><span id="highTemp5"></span>&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+             
+ 
+    <article>
+
+    <h4>The Importance Of Bees</h4>
+    <p>           The bees place in our world is important beyond our understanding.  
+            
+            The small little insect that works so tirelessly and quietly around us certainly is one of the reasons, if not a main reason, for the possibility of human development on earth.  Without them, the development of life on earth, as we know it now, would have been much different and the conditions for human development may not have existed.  The conditions we are talking about here are the appearance of the flower bearing plants and pollinators, with the bees, being the crown jewel of the pollinators.  The bees, the flowers, human beings and everything that developed alongside humans are all an interconnected series of events over an enormous amount of time. 
+            
+            In the writings, artwork and symbolism of cultures and religions around the world from time immemorial are references to the bees and the substances they collect in Nature and make in their bodies, namely honey, bee pollen, bee propolis, royal jelly and wax.  These substances, along with the bees and the beehive, have been held in high esteem throughout human history in every part of the world.  The references are almost always of renewal, rebirth and new beginnings.  The references are almost always about the good, positive, reinforcing things of life.  They are gifts and blessings.
+            
+            “Bread feeds the body, indeed, but flowers feed also the soul.”.
+    
+    Below are three environmental goals that are critical to achieving sustainable societies and being good environmental stewards, some of their economic, social and environmental benefits, and some of the actions we can take to achieve these goals.</p>
+       
+</article>
+
+<aside class="aside-events">
+    <h4 class="h4events">Events in Fish Haven</h4>
+    </aside>
+
+</main>
+<br>
+
+    <footer>
+            <aside>
+                    <div class="contacts">
+         <p><b>The Right Weather</b></p>
+         <p><i class="material-icons">location_on</i>123 Broadway<br>Preston, ID 1234</p>
+         <p><i class="material-icons">phone_iphone</i> 055-033-696</p>
+         <p><i class="material-icons">mail_outline</i> theright@weatherapi.com</p>
+         <i class="fa fa-facebook-official" aria-hidden="true"></i>
+         <i class="fa fa-twitter" aria-hidden="true"></i>
+         <i class="fa fa-instagram" aria-hidden="true"></i>
+         <i class="fa fa-google" aria-hidden="true"></i>
+         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+         <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                    <div id="map"></div>
+                        </aside>
+            <p>&copy; 2019 All Rights Reserved &#x0007C; The Right Weather &#x0007C; Carlos Alonzo.<br>Weather Information provided by<a href="https://openweathermap.org/"> OpenWeatherMap.org .</a></p>
+            <div class="label" id="fecha"></div>
+  </footer>
+
+  <script src="java_code/smallnavigationbar.js"></script>
+<script src="java_code/date.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="java_code/mapweather.js"></script>
+<script src="java_code/fish.js"></script>
+
+    </body>
+</html>
