@@ -1,20 +1,82 @@
-/*html {
-height: 100%;
+* {
+box-sizing: border-box;
 }
-main {
-    min-height: 30%;
+body {
+    margin:0;
+    padding:0;
+    height: 100%;
 }
-body{
-background-color: #87cefa;
-margin: 0;
-padding: 0;
+header {
+    background-color: #2F4F4F;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: center;
 }
-header{
-    text-align: center;
+header img {
+    height: 50px;
+    width: 60px;
+}
+nav {
+    background-color:#bbbbbb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.9rem;
+    color: #ffffff;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
     display: flex;
-    justify-content: center;    
+    flex-flow: row wrap;
+    padding: .8rem 5%;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li a:hover { background-color: #E2D8C7; color: #000;}
+nav ul li.active a { background-color: #D1ECFF; color: #000;}
+nav ul.hide {display: none;}
+
+nav ul li.active ul {
+    position: relative;
+    background: #D1ECFF;
+     
+}
+nav ul li ul li {
+    width: 100%;
 }
 
+.intro p {
+    text-align: center;
+    margin: 25px 9vw;
+    color: #333849;
+    line-height: 2rem;
+}
+.intro span {
+    color: #2F4F4F;
+    font-family: 'Playball', cursive;
+    font-size: 25px;
 
 }
-*/
+
+nav ul li ul {
+    
+    display: none;
+    
+  
+
+}
+
+nav ul li:hover ul {
+    display: block; 
+    }
+nav ul li:hover {
+    display: block;
+
+}

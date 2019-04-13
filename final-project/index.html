@@ -10,10 +10,11 @@
 <!--Google APIs-->
 
 <link href="https://fonts.googleapis.com/css?family=Playball%7CRochester%7CCrimson+Text" rel="stylesheet">
-
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
 
 <!--Css References-->
 <link rel="stylesheet" href="css-templepage/normalize.css">
+<link rel="stylesheet" href="css-templepage/small-temlple.css">
 <link rel="stylesheet" href="css-templepage/largetemple.css">
 
 
@@ -28,13 +29,14 @@
                 <q>We offer you the best services, so that your experience in the temple is an unforgettable memory</q></div>
             
         </header>
+        
         <nav class="navigation">
-          
+                <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
             
             <li class="active"><a href="#">Home Page</a></li>    
-            <li><a href="#">Our Services</a>
-                <ul>
+            <li class="submenu"><a href="#">Our Services</a>
+                <ul class="hidden">
                     <li><a href="#">Free Amenities</a></li>
                     <li><a href="#">Reception</a></li>
                     <li><a href="#">Full-time temple missionaries</a></li>
@@ -42,9 +44,9 @@
             </li>
                 <li><a href="#">Reservations</li>
                    
-                    <li><a href="#">Temples</a>
-                    <ul>
-                        
+                    <li class="submenu"><a href="#">Temples</a>
+                    <ul class="hidden">
+                            
                         <li><a href="logan.html">Logan Utah</a></li>
                         <li><a href="#">Jordan River</a></li>
                         <li class="special"><a href="#">Ogden</a></li>
@@ -58,13 +60,14 @@
             </ul>
             </nav>
   <main>
-   <slider>
-       <slide><p>Logan Utah</p></slide>
-       <slide><p>Brigham City</p></slide>
-       <slide><p>Jordan River</p></slide>
-       <slide><p>Ogden</p></slide>
-       </slider>
 
+
+        <slider>
+                <slide><p>Logan Utah</p></slide>
+                <slide><p>Brigham City</p></slide>
+                <slide><p>Jordan River</p></slide>
+                <slide><p>Ogden</p></slide>
+                </slider>
 <div id="callToAction">
     <div class="button"><a href="#">Book now</a></div>
     </div>
@@ -72,19 +75,28 @@
        <div class="intro">
             <p><span>Temple Inn & Suites</span> is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. Each of our hotels offers a prime location in the four major cities where you can count on modern accommodations, weeding reception halls, and fine dining from our top head chefs. When you're in search of luxury with mormon flair, look to <span><a href="index.html">Temple Inn & Suites</a></span>.</p>
              </div>
+
+             <section class="pictures">
+                    <div class="threeimag">
      
+                  <img src="temple-images/kitchen1.jpg" alt="youth">
+                        <img src="temple-images/sealing2.jpg" alt="couple">
+                     <img src="temple-images/guarderia2.jpg" alt="babysitting">
+                        </div>
+                </section>
+   
              <section class="cities">
               
                     <aside class="information">
-                        <blockquote ><h3>Logan</h3>"The extreme package was amazing. I've never had a trip take me away like this one did."<br><br>Eric&mdash;New York</blockquote>
-                        <blockquote><h3>Jordan River</h3>"The hospital fundraiser was fun, challenging and uplifting all at the same time."<br><br>Karen&mdash;Missoula</blockquote>
-                        <blockquote><h3>Ogden</h3>"They fixed my bike and brought it to my hotel at no extra charge.  That's service for you!"<br><br>Jordan&mdash;California</blockquote>
-                        <blockquote><h3>Brigham City</h3>"They fixed my bike and brought it to my hotel at no extra charge.  That's service for you!"<br><br>Jordan&mdash;California</blockquote>
+                        <blockquote ><h3>Logan</h3><hr>"The extreme package was amazing. I've never had a trip take me away like this one did."<br><br>Eric&mdash;New York</blockquote>
+                        <blockquote><h3>Jordan River</h3><hr>"The hospital fundraiser was fun, challenging and uplifting all at the same time."<br><br>Karen&mdash;Missoula</blockquote>
+                        <blockquote><h3>Ogden</h3><hr>"They fixed my bike and brought it to my hotel at no extra charge.  That's service for you!"<br><br>Jordan&mdash;California</blockquote>
+                        <blockquote><h3>Brigham City</h3><hr>"They fixed my bike and brought it to my hotel at no extra charge.  That's service for you!"<br><br>Jordan&mdash;California</blockquote>
 
                     </aside>
                 </section>
     </main>
-  
+  <script src="javaS/hambmenu.js"></script>
         </body>
     </html>
 
