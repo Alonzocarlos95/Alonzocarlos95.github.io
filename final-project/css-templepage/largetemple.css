@@ -252,7 +252,7 @@ margin: 10px;
     left: 10px;
     bottom: 10px;
     right: 10px;
-   background-color: rgba(0,0,0,.8);
+   background-color: #000000cc;
    transform: scaleY(0);
    transition: transform .5s;
    } 
@@ -271,8 +271,21 @@ margin: 10px;
       font-family: 'Aleo', serif;
        font-size: 20px;
        color: #fff;   
+       text-align: center;
    }
-   
+   /*Logan*/
+   .picture img {
+       width: 100%;
+       height: 500px;
+   }
+   .intro-logan {
+       background-color: #2F4F4F;
+   }
+   .intro-logan h1 {
+       font-family:  'Aleo', serif;
+       text-align: center;
+       color: #ffffff;
+   }
     }
     
    
