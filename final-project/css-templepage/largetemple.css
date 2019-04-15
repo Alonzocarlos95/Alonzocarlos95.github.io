@@ -252,9 +252,26 @@ margin: 10px;
     left: 10px;
     bottom: 10px;
     right: 10px;
-   background-color: #2F4F4F;
+   background-color: rgba(0,0,0,.8);
+   transform: scaleY(0);
+   transition: transform .5s;
    } 
-  
+   .container .box:hover .details {
+       transform: scaleY(1);
+   }
+   .container .box .details .content {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       text-align: center;
+       padding: 15px;
+       color: #ffffff;
+   }
+   .container .box .details .content h2 {
+      font-family: 'Aleo', serif;
+       font-size: 20px;
+       color: #fff;   
+   }
    
     }
     
