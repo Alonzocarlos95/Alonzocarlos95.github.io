@@ -183,7 +183,7 @@
    }
    .intro {
        margin-top: 240px ;
-       padding: 100px;
+       padding: 50px;
    }
    .intro p {
        font-size: 25px;
@@ -276,15 +276,24 @@ margin: 10px;
    /*Logan*/
    .picture img {
        width: 100%;
-       height: 500px;
+       height: 400px;
+       position: absolute;
    }
    .intro-logan {
+       margin-top: 450px;
        background-color: #2F4F4F;
+       padding: 50px;
    }
    .intro-logan h1 {
        font-family:  'Aleo', serif;
        text-align: center;
        color: #ffffff;
+   }
+   .intro-logan p {
+       padding: 10px;
+       font-family: 'Crimson Text', serif;
+       font-size: 25px;
+       color: #DCDCDC;
    }
     }
     
