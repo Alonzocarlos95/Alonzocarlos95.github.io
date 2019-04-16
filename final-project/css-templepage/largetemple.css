@@ -378,14 +378,57 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     background-color: #2F4F4F
 }
 footer aside {
-    background-color: #2F4F4F;
-    border-top: 10px solid #9999ff;
+    width: 100%;
+    background-color: #bbbbbb;
+    border-top: 10px solid #2F4F4F;
     margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 30% 20% 20% 30%;
+    margin: 0;
+   text-align: center;
+   padding-left: 32rem;
+}
+#reference {
+    margin-top: 10px;
+}
+#reference h2 {
+    font-size: 20px;
 }
  div.space {
     margin-top: 30rem;
     background-color: #9999ff;
 }
+main h1.resources-info {
+    text-align: center;
+    color: #9999ff;
+    font-family: 'Rochester', cursive;
+    font-size: 50px;
+}
+h2.images-source {
+    background-color: #2F4F4F;
+    text-align: center;
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+    font-size: 35px;
+}
+h2.api-resources {
+    background-color: #2F4F4F;
+    text-align: center;
+    color: #fff;
+    font-family: 'Crimson Text', serif;
+    font-size: 35px;
+}
+ul.list1 {
+    margin: 30px;
+    padding: 20px;
+}
+ul.list1 li {
+    padding: 10px;
+}
+ul.list1 li a {
+    font-size: 20px;
+}
+
 }
 
     

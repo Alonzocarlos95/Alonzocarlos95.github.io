@@ -80,18 +80,25 @@ nav ul li:hover {
     display: block;
 
 }
-footer aside {
-    background-color: #2F4F4F;
-    border-top: 10px solid #9999ff;
+footer {
+    background-color: #333849;
     font-size: 25px;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0;
+    margin-bottom: 0rem;
     padding-bottom: 0px;
     padding-top: 0px;
 }
-.label {
+footer aside {
+    background-color: #bbbbbb;
+    border-top: 10px solid #2F4F4F ;
+   padding: 20px 0;
     text-align: center;
-      margin: -20px 0 0 0;
-     padding-top:0;
-     padding-bottom: 2rem;
- }
+   
+}
+#reference a {
+text-decoration: none;
+display: inline-block;
+color: #000;
+font-size: .8rem;
+}
