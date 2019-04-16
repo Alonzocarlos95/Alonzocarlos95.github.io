@@ -114,3 +114,6 @@ textarea {
     border: 1px solid #2F4F4F;
     box-shadow: 1px 1px 1px #2F4F4F;
 }
+h3.required {
+    text-align: center;
+  }

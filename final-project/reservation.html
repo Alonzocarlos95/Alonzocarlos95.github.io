@@ -61,7 +61,7 @@
 
             <main>
                     
-                <h3 class="required">Please enter your information to report a storm.</h3>
+                <h3 class="required">Please enter your information to make a reservation.</h3>
                 
                         <form action="thanks.html">
                 <fieldset>
@@ -85,7 +85,7 @@
                 <br><br>
              
                    
-                    <label for="storm">Storm Date</label>
+                    <label for="storm">Check-in</label>
                     <input type="date" id='storm'>
                     <br><br>
                     <label for="stormlist">Location</label>
@@ -99,28 +99,25 @@
                                        
                                         </datalist>
                                         <br><br>
-                    <label for="rate">Storm Severity (1 to 10)</label>                    
-                    <input type="range" id="rate" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span><br><br>
-                    <label for="sregion">Storm Region</label>
+                    
+                    <label for="sregion">Adults</label>
                     <select id="sregion">
-                            <option value="Select Region" disabled selected>Select Region</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Soda Spring">Soda Spring</option>
-                        <option value="Fish Haven">Fish Haven</option>
+                            <option value="Select Region" disabled selected>1</option>
+                        <option value="Preston">2</option>
+                        <option value="Soda Spring">3</option>
+                        <option value="Fish Haven">4</option>
                     </select>
+                    <br><br>
+                    <label for="sregion">Children</label>
+                    <select id="sregion">
+                        <option value="Select Region" disabled selected>0</option>
+                    <option value="Preston">1</option>
+                    <option value="Soda Spring">2</option>
+                    <option value="Fish Haven">3</option>
+                </select>
                                <br><br>
-                               <p>User in-danger level:</p>
-                               <input type="radio" id="level" name="level" value="Yes" checked>
-                               <label for="level">Yes</label>
-                
-                               <input type="radio" id="level1" name="level" value="Maybe">
-                               <label for="level1">Maybe</label>
-                
-                               <input type="radio" id="level2" name="level" value="No">
-                               <label for="level2">No</label>
-                
-                            <br><br>
+                             
+                            <br>
                             <label for='com'>Additional Information or Comments:</label>
                             <textarea id='com' name="com" rows="5" cols="33"></textarea>
                             <br><br>
@@ -131,6 +128,6 @@
                     </form>
                 </main>
 
-
+                <script src="javaS/hambmenu.js"></script>
     </body>
 </html>            

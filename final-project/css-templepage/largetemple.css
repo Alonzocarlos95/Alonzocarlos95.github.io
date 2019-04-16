@@ -428,7 +428,22 @@ ul.list1 li {
 ul.list1 li a {
     font-size: 20px;
 }
-
+/*Reservation*/
+textarea {
+    letter-spacing: 1px;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+form {
+    max-width: 500px;
+    margin:4rem auto;
+}
+h3.required {
+    margin-top: 3rem;
+}
 }
 
     
