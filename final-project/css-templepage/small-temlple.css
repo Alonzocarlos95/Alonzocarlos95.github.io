@@ -102,3 +102,15 @@ display: inline-block;
 color: #000;
 font-size: .8rem;
 }
+/*Reservation*/
+label,
+texarea {
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 10px;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #2F4F4F;
+    box-shadow: 1px 1px 1px #2F4F4F;
+}

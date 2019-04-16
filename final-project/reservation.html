@@ -35,7 +35,7 @@
                 <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
             
-            <li class="active"><a href="#">Home Page</a></li>    
+            <li><a href="index.html">Home Page</a></li>    
             <li class="submenu"><a href="#">Our Services</a>
                 <ul class="hidden">
                     <li><a href="#">Free Amenities</a></li>
@@ -60,9 +60,7 @@
             </nav>
 
             <main>
-                    <div class="header2">
-                    <h2>Storm Center</h2>
-                    </div>
+                    
                 <h3 class="required">Please enter your information to report a storm.</h3>
                 
                         <form action="thanks.html">
@@ -83,22 +81,22 @@
                 <label for="zip">Zip Code</label>
                 <input type="number" id="zip" required>
                 
-                </fieldset>
+              
                 <br><br>
-                <fieldset>
-                    <legend>Weather Events</legend>
+             
+                   
                     <label for="storm">Storm Date</label>
                     <input type="date" id='storm'>
                     <br><br>
-                    <label for="stormlist">Storm Type</label>
+                    <label for="stormlist">Location</label>
                     <input list="stormtype" id="stormlist" name="stormlist" />
                 
                     <datalist id="stormtype">
-                        <option value="Flash Flood">
-                            <option value="Hail">
-                                <option value="Hurricane">
-                                    <option value="Thunderstorm">
-                                        <option value="Tornado">
+                        <option value="Logan Utah">
+                            <option value="Ogden Utah">
+                                <option value="Jordan River">
+                                    <option value="brigham-city">
+                                       
                                         </datalist>
                                         <br><br>
                     <label for="rate">Storm Severity (1 to 10)</label>                    
@@ -129,7 +127,7 @@
                 
                             <label for="sub">Form Submission Button</label>
                             <input type="submit" id="sub">
-                </fieldset>
+                        </fieldset>
                     </form>
                 </main>
 
