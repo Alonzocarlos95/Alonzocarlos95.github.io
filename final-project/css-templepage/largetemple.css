@@ -295,7 +295,100 @@ margin: 10px;
        font-size: 25px;
        color: #DCDCDC;
    }
-    }
+   section {
+       padding: 50px;
+   }
+   .slides {
+       width: 609px;
+       margin: 0 auto;
+       position: relative;
+       display: block;
+   }
+   .slides input {
+       display: none;
+   }
+   .slide-container {
+       display: block;
+   }
+   .slide {
+       top: 0;
+       display: block;
+       position: absolute;
+       transform: scale(0);
+       transition: all 0.7s ease-in-out;
+       opacity: 0;
+   }
+   .slide img {
+       width: 100%;
+       height: 100%;
+       display: block;
+   }
+   .nav1 label {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    color: rgb(0,0,0,0.5);
+    text-align: center;
+    margin-top: 29%;
+   }
+   .nav1 label:hover {
+       color: #000;
+   }
+.nav1 .next { 
+    right: 5px;
+}
+.nav1 .prev {
+    left: 5px;
+}
+input:checked + .slide-container .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+input:checked + .slide-container .nav1 label {
+    display: block;
+}
+.nav-dots {
+    width: 100%;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin-top: 63%;
+}
+.nav-dots .nav-dot {
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.6);
+}
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rga(0,0,0,0.8);
+}
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background-color: #2F4F4F
+}
+footer aside {
+    background-color: #2F4F4F;
+    border-top: 10px solid #9999ff;
+    margin-top: 1rem;
+}
+ div.space {
+    margin-top: 30rem;
+    background-color: #9999ff;
+}
+}
+
+    
     
    
    
